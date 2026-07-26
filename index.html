@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaarukesh G V | ML Engineer | Data Analyst | Data Engineer | Software Developer</title>
+    <meta name="description" content="Portfolio of Shaarukesh G V - Computer Science Undergraduate specializing in ML Engineering, Data Analysis, Data Engineering, and Software Development.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Background Canvas for Interactive Nodes -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">&lt;</span>Shaarukesh<span class="logo-accent">.dev/&gt;</span>
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#achievements" class="nav-item">Achievements</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="mailto:shaarukshaarukesh4@gmail.com" class="btn btn-outline btn-sm">
+                    <i class="fa-regular fa-paper-plane"></i> Contact
+                </a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-pill">
+                        <span class="pulse-dot"></span> ML Engineer | Data Analyst | Data Engineer | <span style="color: var(--accent-emerald); font-weight: 700;">Software Developer</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Shaarukesh G V</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I specialize in <span id="typing-text" class="highlight-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Computer Science undergraduate at Jain University (CGPA: 9.4). Developing end-to-end Machine Learning models, high-performance Data Pipelines, and scalable Software architectures.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-rocket"></i> View Projects
+                        </a>
+                        <a href="https://github.com/shaarukesh44" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/shaarukesh-g-v-8791712a8" target="_blank" rel="noopener noreferrer" class="btn btn-glass icon-only" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                    <!-- Stats Grid -->
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">9.4</div>
+                            <div class="stat-label">CGPA (B.Tech CS-DS)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">LeetCode DSA Solved</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">AI & Software Deployments</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="window-buttons">
+                                <span class="btn-dot close"></span>
+                                <span class="btn-dot minimize"></span>
+                                <span class="btn-dot maximize"></span>
+                            </div>
+                            <span class="window-title">shaarukesh.py</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code><span class="keyword">import</span> sys
+
+<span class="keyword">class</span> <span class="class-name">UnifiedEngineer</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.name = <span class="string">"Shaarukesh G V"</span>
+        self.focus = [<span class="string">"ML Engineer"</span>, <span class="string">"Data Analyst"</span>, <span class="string">"Data Engineer"</span>, <span class="string">"Software Dev"</span>]
+        self.stack = {
+            <span class="string">"ML & AI"</span>: [<span class="string">"Scikit-learn"</span>, <span class="string">"Transformers"</span>, <span class="string">"XGBoost"</span>],
+            <span class="string">"Analytics"</span>: [<span class="string">"Power BI"</span>, <span class="string">"DAX"</span>, <span class="string">"Matplotlib"</span>, <span class="string">"Pandas"</span>],
+            <span class="string">"Software"</span>: [<span class="string">"FastAPI"</span>, <span class="string">"Django"</span>, <span class="string">"PySpark"</span>, <span class="string">"Docker"</span>]
+        }
+    
+    <span class="keyword">def</span> <span class="function">run_pipeline</span>(self):
+        <span class="keyword">return</span> <span class="string">"Data Ingested -> Analytics Performed -> ML Inference Served"</span>
+
+engineer = UnifiedEngineer()
+<span class="builtin">print</span>(engineer.run_pipeline())</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">PROFILE SUMMARY</span>
+                    <h2 class="section-title">ML, Analytics & Software Engineering</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
+                        <h3>Professional Profile</h3>
+                        <p>
+                            Computer Science undergraduate specializing in Data Science, with core expertise in Python, SQL, and big data architectures. Experienced in building scalable software systems, data engineering pipelines (PySpark, Docker, Airflow) and implementing machine learning solutions (XGBoost, NLP, ensemble models).
+                        </p>
+                        <p>
+                            Skilled at conducting exploratory data analysis (EDA), designing high-impact Business Intelligence dashboards (Power BI, DAX), and deploying cloud-native web APIs (FastAPI, Django).
+                        </p>
+                    </div>
+
+                    <div class="education-card glass-card">
+                        <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3>Education</h3>
+                        
+                        <div class="edu-item">
+                            <div class="edu-year">2023 - 2027</div>
+                            <h4 class="edu-degree">B.Tech Computer Science & Engineering (Data Science)</h4>
+                            <div class="edu-inst">Jain University</div>
+                            <div class="edu-badge"><i class="fa-solid fa-award"></i> CGPA: 9.4 / 10</div>
+                        </div>
+
+                        <div class="edu-item">
+                            <div class="edu-year">2021 - 2023</div>
+                            <h4 class="edu-degree">Higher Secondary Education (CBSE)</h4>
+                            <div class="edu-score">Score: 85%</div>
+                        </div>
+
+                        <div class="edu-item">
+                            <div class="edu-year">2021</div>
+                            <h4 class="edu-degree">Secondary Education (CBSE)</h4>
+                            <div class="edu-score">Score: 83%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">SKILL TREE</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <!-- Skill Filter Tabs -->
+                <div class="skill-tabs">
+                    <button class="tab-btn active" data-filter="all">All Skills</button>
+                    <button class="tab-btn" data-filter="ml">Machine Learning</button>
+                    <button class="tab-btn" data-filter="analytics">Data Analytics</button>
+                    <button class="tab-btn" data-filter="engineering">Software & Data Engineering</button>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Machine Learning & AI -->
+                    <div class="skill-category glass-card" data-category="ml">
+                        <h3><i class="fa-solid fa-brain"></i> Machine Learning & AI</h3>
+                        <div class="tags-wrapper">
+                            <span class="skill-tag highlight"><i class="fa-solid fa-robot"></i> Scikit-Learn</span>
+                            <span class="skill-tag highlight"><i class="fa-solid fa-language"></i> Transformers (Hugging Face)</span>
+                            <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> Deep Learning</span>
+                            <span class="skill-tag"><i class="fa-solid fa-diagram-project"></i> NLP (spaCy / SBERT)</span>
+                            <span class="skill-tag"><i class="fa-solid fa-tree"></i> XGBoost & Random Forest</span>
+                            <span class="skill-tag"><i class="fa-solid fa-sliders"></i> Model Evaluation & Feature Engineering</span>
+                            <span class="skill-tag"><i class="fa-solid fa-people-group"></i> Ensemble Learning</span>
+                        </div>
+                    </div>
+
+                    <!-- Data Analytics -->
+                    <div class="skill-category glass-card" data-category="analytics">
+                        <h3><i class="fa-solid fa-chart-column"></i> Data Analytics & BI</h3>
+                        <div class="tags-wrapper">
+                            <span class="skill-tag highlight"><i class="fa-solid fa-chart-pie"></i> Power BI</span>
+                            <span class="skill-tag highlight"><i class="fa-solid fa-calculator"></i> DAX & Power Query</span>
+                            <span class="skill-tag"><i class="fa-solid fa-magnifying-glass-chart"></i> Exploratory Data Analysis (EDA)</span>
+                            <span class="skill-tag"><i class="fa-solid fa-chart-area"></i> Matplotlib & Seaborn</span>
+                            <span class="skill-tag"><i class="fa-solid fa-table"></i> Pandas & NumPy</span>
+                            <span class="skill-tag"><i class="fa-file-excel fa-regular"></i> Advanced Excel</span>
+                        </div>
+                    </div>
+
+                    <!-- Data Engineering & APIs -->
+                    <div class="skill-category glass-card" data-category="engineering">
+                        <h3><i class="fa-solid fa-gears"></i> Software & Data Engineering</h3>
+                        <div class="tags-wrapper">
+                            <span class="skill-tag highlight"><i class="fa-solid fa-cube"></i> PySpark (Big Data)</span>
+                            <span class="skill-tag highlight"><i class="fa-solid fa-filter"></i> ETL Pipelines</span>
+                            <span class="skill-tag"><i class="fa-brands fa-python"></i> Django / FastAPI / Flask</span>
+                            <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL / MySQL / NoSQL</span>
+                            <span class="skill-tag highlight"><i class="fa-solid fa-server"></i> MongoDB & SQLAlchemy</span>
+                            <span class="skill-tag highlight"><i class="fa-brands fa-docker"></i> Docker Containerization</span>
+                            <span class="skill-tag"><i class="fa-solid fa-wind"></i> Apache Airflow & N8N</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">PROJECT PORTFOLIO</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-brain-circuit"></i></div>
+                            <div class="project-badge">May 2026</div>
+                        </div>
+                        <h3 class="project-title">AI-Powered Enterprise Sentiment Intelligence & Misinformation Analytics Platform</h3>
+                        <div class="project-metrics">
+                            <span class="metric-chip"><i class="fa-solid fa-bullseye"></i> 89.4% Accuracy</span>
+                            <span class="metric-chip"><i class="fa-solid fa-microchip"></i> Ensemble ML</span>
+                        </div>
+                        <p class="project-description">
+                            Built a full-stack, enterprise-grade AI sentiment analytics platform. Combines parallel ML inference across a 10-model ensemble with dynamic MongoDB Atlas telemetry.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>React</span>
+                            <span>MongoDB</span>
+                            <span>Hugging Face</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shaarukesh44/AI-Powered-Enterprise-Sentiment-Intelligence-Misinformation-Analytics-Platform" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                <i class="fa-brands fa-github"></i> GitHub Repo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-file-contract"></i></div>
+                            <div class="project-badge">March 2026</div>
+                        </div>
+                        <h3 class="project-title">AI Resume Matcher: Contextual Resume Benchmarking</h3>
+                        <div class="project-metrics">
+                            <span class="metric-chip"><i class="fa-solid fa-magnifying-glass"></i> Semantic Similarity</span>
+                            <span class="metric-chip"><i class="fa-solid fa-code"></i> NLP Parsing</span>
+                        </div>
+                        <p class="project-description">
+                            Created an AI candidate matching platform using SBERT embeddings, sentence transformers, and spaCy. Features skill gap analysis and automated score evaluation.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Streamlit</span>
+                            <span>spaCy</span>
+                            <span>SBERT</span>
+                            <span>Pandas</span>
+                            <span>PDFPlumber</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shaarukesh44" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="https://airesumemacher-f2enmckevccdd5cfchrriw.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="project-badge">October 2025</div>
+                        </div>
+                        <h3 class="project-title">Business Intelligence Sales Analytics Dashboard</h3>
+                        <div class="project-metrics">
+                            <span class="metric-chip"><i class="fa-solid fa-money-bill-trend-up"></i> Forecasting</span>
+                            <span class="metric-chip"><i class="fa-solid fa-chart-pie"></i> Sales Modeling</span>
+                        </div>
+                        <p class="project-description">
+                            Developed a sales insights dashboard showcasing shipping speeds, regional profits, orders, and sales forecasting utilizing advanced DAX modeling.
+                        </p>
+                        <div class="project-tech">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Power Query</span>
+                            <span>Excel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shaarukesh44" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiMjVmNjdkZTgtY2RjNS00YTM5LWIzOWQtNzIxMTYwMGYxYjc2IiwidCI6ImE1ZWViZWFkLWEyMzAtNDYxOS04OTUwLTU4MmVjY2U3NWY2NCJ9&pageName=2ce09ea550d4ca1b0144" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i class="fa-solid fa-chart-bar"></i> Report Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internship Experience -->
+        <section id="experience" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">CAREER PATH</span>
+                    <h2 class="section-title">Internship Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Internship 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="role-title">Student Intern – AI Evolutionary Computation</h3>
+                                    <h4 class="company-name">AI Evolutionary Computation Enterprises</h4>
+                                </div>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Jan 2026 – Mar 2026</span>
+                            </div>
+                            <ul class="timeline-points">
+                                <li>Studied Evolutionary Computation and Genetic Algorithms (crossover, mutation, parent selection, optimization pipelines).</li>
+                                <li>Applied metaheuristic optimization models to search-based AI classification tasks and neural network hyperparameter tuning.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Internship 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="role-title">Data Analyst Intern</h3>
+                                    <h4 class="company-name">Main Flow Services and Technologies Pvt. Ltd.</h4>
+                                </div>
+                                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Jan 2025 – Mar 2025</span>
+                            </div>
+                            <ul class="timeline-points">
+                                <li>Conducted exploratory data analysis (EDA), data cleaning, feature engineering, and model training utilizing Scikit-learn.</li>
+                                <li>Evaluated model accuracy, precision, recall, and F1-score, generating reports to guide strategic business recommendations.</li>
+                            </ul>
+                            <div class="timeline-footer">
+                                <a href="https://github.com/shaarukesh44" target="_blank" rel="noopener noreferrer" class="link-btn"><i class="fa-brands fa-github"></i> Internship Codebase</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Certifications -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">CREDENTIALS</span>
+                    <h2 class="section-title">Achievements & Certifications</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="achieve-grid">
+                    <!-- Left Column: Achievements -->
+                    <div class="achieve-card glass-card">
+                        <h3><i class="fa-solid fa-trophy highlight-icon"></i> Key Milestones</h3>
+                        <div class="achievement-list">
+                            <div class="achieve-item">
+                                <div class="achieve-icon"><i class="fa-solid fa-code"></i></div>
+                                <div>
+                                    <h4>Solved 500+ LeetCode DSA Problems</h4>
+                                    <p>Proficient in complex data structures, algorithms, and analytical logic (arrays, graphs, DP).</p>
+                                    <a href="https://leetcode.com/u/997EpuHHtR/" target="_blank" rel="noopener noreferrer" class="link-btn">LeetCode Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="achieve-item">
+                                <div class="achieve-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <div>
+                                    <h4>Hackathon Competitor</h4>
+                                    <p>Participated and delivered solutions in Zomathon, Smart India Hackathon (SIH), and NASSCOM hackathons.</p>
+                                </div>
+                            </div>
+
+                            <div class="achieve-item">
+                                <div class="achieve-icon"><i class="fa-solid fa-gears"></i></div>
+                                <div>
+                                    <h4>5+ Active Deployments</h4>
+                                    <p>Engineered and deployed modular, end-to-end full-stack API and Machine Learning dashboards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Certifications (Plain-text cards without external links) -->
+                    <div class="cert-card glass-card">
+                        <h3><i class="fa-solid fa-certificate highlight-icon"></i> Certifications</h3>
+                        <p class="cert-intro-text">Professional credentials earned in cloud, automation, analytics, and prompt engineering.</p>
+                        <div class="cert-grid">
+                            <div class="cert-badge">
+                                <i class="fa-brands fa-aws cert-icon"></i>
+                                <span>AWS Cloud Practitioner</span>
+                            </div>
+                            <div class="cert-badge">
+                                <i class="fa-brands fa-google cert-icon"></i>
+                                <span>Google Cloud Digital Leader</span>
+                            </div>
+                            <div class="cert-badge">
+                                <i class="fa-solid fa-chart-column cert-icon"></i>
+                                <span>Power BI Visualization</span>
+                            </div>
+                            <div class="cert-badge">
+                                <i class="fa-solid fa-brain cert-icon"></i>
+                                <span>Deep Learning Specialist</span>
+                            </div>
+                            <div class="cert-badge">
+                                <i class="fa-solid fa-wand-magic-sparkles cert-icon"></i>
+                                <span>Prompt Engineering</span>
+                            </div>
+                            <div class="cert-badge">
+                                <i class="fa-solid fa-bolt cert-icon"></i>
+                                <span>N8N Automation Developer</span>
+                            </div>
+                            <div class="cert-badge">
+                                <i class="fa-solid fa-building cert-icon"></i>
+                                <span>Tata Data Job Simulation</span>
+                            </div>
+                            <div class="cert-badge">
+                                <i class="fa-file-excel fa-regular cert-icon"></i>
+                                <span>Excel Specialist Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">CONNECT</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info glass-card">
+                        <h3>Connect with Me</h3>
+                        <p>I am actively seeking roles in Machine Learning Engineering, Data Analytics, Data Engineering, and Software Development. Let's work together!</p>
+                        
+                        <div class="info-list">
+                            <a href="mailto:shaarukshaarukesh4@gmail.com" class="info-item">
+                                <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+                                <div>
+                                    <span class="info-label">Email</span>
+                                    <span class="info-val">shaarukshaarukesh4@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+916374369204" class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <span class="info-label">Phone</span>
+                                    <span class="info-val">+91 6374369204</span>
+                                </div>
+                            </a>
+
+                            <a href="https://linkedin.com/in/shaarukesh-g-v-8791712a8" target="_blank" rel="noopener noreferrer" class="info-item">
+                                <div class="info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div>
+                                    <span class="info-label">LinkedIn</span>
+                                    <span class="info-val">linkedin.com/in/shaarukesh-g-v-8791712a8</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/shaarukesh44" target="_blank" rel="noopener noreferrer" class="info-item">
+                                <div class="info-icon"><i class="fa-brands fa-github"></i></div>
+                                <div>
+                                    <span class="info-label">GitHub</span>
+                                    <span class="info-val">github.com/shaarukesh44</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Contact Form -->
+                    <div class="contact-form glass-card">
+                        <h3>Send a Message</h3>
+                        <form id="portfolio-contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required placeholder="Project Collaboration / Job Offer">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="4" required placeholder="Hi Shaarukesh, I would like to..."></textarea>
+                            </div>
+                            <div class="form-group" style="display:none;">
+                                <label for="botcheck">Leave this empty</label>
+                                <input type="text" id="botcheck">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-regular fa-paper-plane"></i> Send Message
+                            </button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Shaarukesh G V. Designed & Developed with <i class="fa-solid fa-heart highlight-icon"></i></p>
+            <div class="footer-links">
+                <a href="https://github.com/shaarukesh44" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/shaarukesh-g-v-8791712a8" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:shaarukshaarukesh4@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
