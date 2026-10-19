@@ -84,17 +84,18 @@ function initCanvasAnimation() {
 }
 
 /* --------------------------------------------------
-   2. Typing Effect (Target Roles)
+   2. Typing Effect (Target Roles & Focus Areas)
    -------------------------------------------------- */
 function initTypingEffect() {
     const target = document.getElementById('typing-text');
     if (!target) return;
 
     const phrases = [
-        'Machine Learning Engineering',
-        'Data Analytics & BI Reporting',
+        'Software Development & Cloud Services',
+        'AI Engineering & Autonomous Agents',
+        'Machine Learning & Deep Learning (RAG/NLP)',
         'Data Engineering & ETL Pipelines',
-        'Full-Stack Software Development'
+        'Business Intelligence & Data Analytics'
     ];
 
     let phraseIdx = 0;
